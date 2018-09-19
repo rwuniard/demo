@@ -18,4 +18,9 @@ public class HelloWorldController {
     public String print(@PathVariable String myString) {
         return "hello " + myString;
     }
+
+    @RequestMapping(value="test", method=RequestMethod.GET)
+    public String test() {
+        return "This is test branch";
+    }
 }
